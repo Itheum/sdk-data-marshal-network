@@ -1,8 +1,7 @@
 export class ErrNetworkConfig extends Error {
-  public constructor(message?: string) {
+  public constructor(env: string) {
     super(
-      message ||
-        'Network configuration is not set. Call setNetworkConfig static method before calling any method that requires network configuration.'
+      `Invalid environment: ${env}, Expected: 'devnet' | 'mainnet' | 'testnet'`
     );
   }
 }

@@ -12,9 +12,7 @@ export class DataMarshal {
    */
   constructor(env: string) {
     if (!(env in EnvironmentsEnum)) {
-      throw new ErrNetworkConfig(
-        `Invalid environment: ${env}, Expected: 'devnet' | 'mainnet' | 'testnet'`
-      );
+      throw new ErrNetworkConfig(env);
     }
     this.env = env;
     const config: Config = networkConfiguration[env as EnvironmentsEnum];

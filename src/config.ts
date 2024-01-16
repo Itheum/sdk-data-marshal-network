@@ -1,7 +1,7 @@
 export enum EnvironmentsEnum {
   devnet = 'devnet',
   testnet = 'testnet',
-  mainnet = 'mainnet',
+  mainnet = 'mainnet'
 }
 
 export interface Config {
@@ -11,21 +11,21 @@ export interface Config {
 
 const devnetNetworkConfig: Config = {
   chainID: 'D',
-  marshalUrl: 'https://api.itheumcloud-stg.com/datamarshalapi/router/v1',
+  marshalUrl: 'https://api.itheumcloud-stg.com/datamarshalapi/router/v1'
 };
 
 const mainnetNetworkConfig: Config = {
   chainID: '1',
-  marshalUrl: 'https://api.itheumcloud.com/datamarshalapi/router/v1',
+  marshalUrl: 'https://api.itheumcloud.com/datamarshalapi/router/v1'
 };
 
 const testnetNetworkConfig: Config = {
   chainID: 'T',
-  marshalUrl: '',
+  marshalUrl: ''
 };
 
-export const networkConfiguration: {[key in EnvironmentsEnum]: Config} = {
+export const networkConfiguration: { [key in EnvironmentsEnum]: Config } = {
   devnet: devnetNetworkConfig,
   mainnet: mainnetNetworkConfig,
-  testnet: testnetNetworkConfig,
+  testnet: testnetNetworkConfig
 };

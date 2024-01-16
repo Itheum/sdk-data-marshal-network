@@ -15,7 +15,7 @@ dist
 .rpt2_cache
 .yalc
 .husky
-out
+out/
 
 # misc
 .DS_Store

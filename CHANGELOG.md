@@ -1,3 +1,10 @@
+# 1.0.0 (2024-01-16)
+
+
+### Features
+
+* implement marshal ecrypt and uptime methods ([680322b](https://github.com/Itheum/sdk-data-marshal-network/commit/680322b20008d3976ba0580f89553457d3f38351))
+
 # Change Log
 
 All notable changes will be documented in this file.

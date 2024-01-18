@@ -1,6 +1,6 @@
 # SDK MX - Data Marshal Network
 
-[![npm (scoped)](https://img.shields.io/npm/v/@itheum/sdk-data-marshal-network)](https://www.npmjs.com/package/@itheum/sdk-data-marshal-network)
+[![npm (scoped)](https://img.shields.io/npm/v/@itheum/sdk-data-marshal-network?style=for-the-badge)](https://www.npmjs.com/package/@itheum/sdk-data-marshal-network)
 
 This SDK is currently focused on interacting with the Itheum's Data Marshal Network.
 

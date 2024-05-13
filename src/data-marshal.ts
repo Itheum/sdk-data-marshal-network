@@ -89,4 +89,32 @@ export class DataMarshal {
       throw new Error('Issue with data marshal checking uptime');
     }
   }
+
+  /**
+   *  Method that returns a nonce to sign in order to prove ownership of a wallet address
+   * @returns The nonce to sign
+   */
+  async preaccess(): Promise<{ nonce: string }> {
+    const requestOptions = {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Cache-Control': 'no-cache'
+      }
+    };
+
+    const response = await fetch(
+      `${this.marshalUrl}/preaccess?chainId=E${this.chainID}`,
+      requestOptions
+    );
+    const data = await response.json();
+
+    if (data && data.nonce) {
+      return {
+        nonce: data.nonce
+      };
+    } else {
+      throw new Error('Issue with data marshal preaccess');
+    }
+  }
 }

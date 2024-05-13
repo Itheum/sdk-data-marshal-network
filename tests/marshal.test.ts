@@ -41,4 +41,18 @@ describe('Test marshal', () => {
 
     expect(typeof response.response_code).toBe('number');
   }, 20000);
+
+  test('#test preaccess devnet', async () => {
+    const dataMarshal = new DataMarshal('devnet');
+
+    const response = await dataMarshal.preaccess();
+    expect(typeof response.nonce).toBe('string');
+  }, 20000);
+
+  test('#test preaccess mainnet', async () => {
+    const dataMarshal = new DataMarshal('mainnet');
+
+    const response = await dataMarshal.preaccess();
+    expect(typeof response.nonce).toBe('string');
+  }, 20000);
 });

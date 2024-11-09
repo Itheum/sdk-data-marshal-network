@@ -1,6 +1,6 @@
 {
   "name": "@itheum/sdk-data-marshal-network",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "SDK for Itheum Marshal Network",
   "main": "out/index.js",
   "types": "out/index.d.js",
